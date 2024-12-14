@@ -36,7 +36,7 @@ const ContactPage = () => {
 
     setIsSubmitting(true);
     const form = new FormData();
-    form.append("access_key", "7c902e99-329b-4080-b2e9-3f58090aa13d"); // Replace with your actual access key
+    form.append("access_key", "f19d6d76-ef90-42bd-aa6c-a270af398d0e"); // Replace with your actual access key (SNEHA'S TEST KEY - 7c902e99-329b-4080-b2e9-3f58090aa13d)
     form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("subject", formData.subject);
