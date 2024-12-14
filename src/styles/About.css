@@ -68,7 +68,17 @@ body {
   font-weight: 300;
 }
 
-.about-philosophy {
+.ProcessPanel h3{
+  max-width: 1000px;
+  margin-top: 70px;
+  margin-left: 4vw;
+  font-size: 32px;
+  color: #1a1a2e;
+  font-weight: 600;
+  border-bottom: 2px solid #dbd5cf;
+}
+
+/*.about-philosophy {
   background: #f9f7f5;
   padding: 45px;
   border-radius: 10px;
@@ -90,6 +100,7 @@ body {
   color: #2c3e50;
   font-weight: 400;
 }
+*/
 
 .about-process {
   display: flex;
@@ -139,5 +150,15 @@ body {
   .process-step {
     width: 80%;
     margin: 20px 0;
+  }
+  .ProcessPanel h3{
+    display: inline-block;
+    max-width: 1000px;
+    margin-top: 70px;
+    margin-left: 5vw;
+    font-size: 32px;
+    color: #1a1a2e;
+    font-weight: 600;
+    border-bottom: 2px solid #dbd5cf;
   }
 }

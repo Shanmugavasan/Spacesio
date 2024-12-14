@@ -8,15 +8,18 @@
   overflow: hidden; /* Hide overflowing content */
 }
 
+
+
 /* Portfolio Heading */
 .portfolio-heading {
   font-size: 36px;
   font-weight: bold;
   color: #333;
+  border-bottom: 1px solid #888;
   margin-bottom: 30px;
-  text-align: center;
-  display: inline-block;
-  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  margin: 0px 0px 35px 10px;
   font-family: "Playfair Display", serif; /* Ensure the heading uses Playfair Display */
 }
 
@@ -26,7 +29,7 @@
   flex-wrap: nowrap;
   gap: 20px;
   animation: scroll 30s linear infinite; /* Infinite horizontal scroll animation */
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 

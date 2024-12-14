@@ -4,12 +4,11 @@
 /* General Project Section Styles */
 .project-section {
   padding: 0; /* Removed padding to avoid space on left and right */
-  padding-top: 60px;
+  padding-top: 75px;
   padding-bottom: 60px;
   background: #f9f9f9;
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-family: "Playfair Display", serif;
   margin: 0; /* Removed margin to avoid extra space */
   box-sizing: border-box;
@@ -18,12 +17,13 @@
 
 /* Project Heading */
 .project-heading {
-  text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 40px;
   font-weight: bold;
+  margin-bottom: 50px;
   color: #333;
-  font-family: "Playfair Display", serif;
+  text-align: left;
+  margin: 0px 0px 40px 4vw;
+  font-family: "Playfair Display", serif; /* Playfair Display font for the heading */
 }
 
 /* Project List and Cards */

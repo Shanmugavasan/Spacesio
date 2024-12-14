@@ -48,7 +48,7 @@ const portfolioImages = [Grid1, Grid2, Grid3, Grid4, Grid5, Grid6];
 const Portfolio = () => {
   return (
     <section className="portfolio-section" id="portfolio">
-      <h2 className="portfolio-heading">Favourite Corner</h2>
+      <h2 className="portfolio-heading">Gallery</h2>
       <div className="image-grid">
         {portfolioImages.map((image, index) => (
           <div key={index} className="portfolio-item">
