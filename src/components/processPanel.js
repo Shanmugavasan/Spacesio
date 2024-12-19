@@ -56,21 +56,21 @@ const Process = () => {
     return () => contentContainer.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handlePointClick = (index) => {
-    const contentContainer = contentContainerRef.current;
-    if (!contentContainer) return;
-  
-    const scrollHeight = contentContainer.scrollHeight;
-    const clientHeight = contentContainer.clientHeight;
-    const scrollPosition =
-      (index / (states.length - 1)) * (scrollHeight - clientHeight);
-  
-    contentContainer.scrollTo({
-      top: scrollPosition - 20, // Offset for better visibility
-      behavior: "smooth",
-    });
-  };
-  
+const handlePointClick = (index) => {
+  const contentContainer = contentContainerRef.current;
+  if (!contentContainer) return;
+
+  const scrollHeight = contentContainer.scrollHeight;
+  const clientHeight = contentContainer.clientHeight;
+  const scrollPosition =
+    (index / (states.length - 1)) * (scrollHeight - clientHeight);
+
+  contentContainer.scrollTo({
+    top: scrollPosition - 20, // Offset for better visibility
+    behavior: "smooth",
+  });
+};
+
 
   return (
     <div className="process-body">
