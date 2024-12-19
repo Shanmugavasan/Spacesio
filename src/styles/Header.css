@@ -20,7 +20,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 10;
-  backdrop-filter: blur(10px); /* Adds a blur effect behind the navbar */
+  backdrop-filter: blur(500px); /* Adds a blur effect behind the navbar */
 }
 
 .header-container {
@@ -101,6 +101,8 @@ body {
   }
 
   .nav {
+    margin-top: 15px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1); /* Add border to separate header */
     display: none; /* Hide the nav by default */
     width: 100%;
     text-align: center;
@@ -113,7 +115,7 @@ body {
   .nav-links {
     flex-direction: column;
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 20px;
     align-items: center;
   }
 
@@ -125,7 +127,7 @@ body {
     cursor: pointer;
     position: absolute; /* Position the hamburger in the top right corner */
     right: 20px; /* Adjust right margin as needed */
-    top: 20px; /* Adjust top margin as needed */
+    top: 25px; /* Adjust top margin as needed */
   }
 
   .hamburger .bar {
@@ -137,7 +139,7 @@ body {
 
   /* Transform the hamburger bars when the menu is open */
   .hamburger.active .bar:nth-child(1) {
-    transform: rotate(45deg) translateY(11.5px);
+    transform: rotate(45deg) translateY(11px);
   }
 
   .hamburger.active .bar:nth-child(2) {
