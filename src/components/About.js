@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/About.css"; // Ensure to import the CSS file
-import Process from "./processPanel";
 import img from "../assets/Abinaya's Residence/2.jpg";
 
 const About = () => {
@@ -12,7 +11,7 @@ const About = () => {
     <section className="about-container">
       <div className="about-top" id="about">
         <div className="about-image">
-          <img src={img} alt="Abinaya's Residence" />
+          <img src={img} alt="" />
         </div>
         <div className="about-text">
           <h2 className="about-header" style={playfairStyle}>
@@ -44,10 +43,6 @@ const About = () => {
           canvases of personal expression.
         </p>
       </div>*/}
-      <div className="ProcessPanel">
-        <h3>Our Design Process</h3>
-      <Process />
-      </div>
     </section>
   );
 };

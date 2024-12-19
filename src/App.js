@@ -10,6 +10,7 @@ import Contact from "./components/ContactPage"; // Import the Contact section
 import Portfolio from "./components/Portfolio"; // Import the Portfolio section
 import Footer from "./components/Footer"; // Import the Footer component
 import FloatingSocial from "./components/Main"; // Import the floating social icons component
+import Process from "./components/processPanel.js";
 import Window from "./components/WindowPanel.js";
 
 const App = () => {
@@ -25,6 +26,9 @@ const App = () => {
 
       {/* About section - rendered below Hero */}
       <About />
+      
+      {/* Process section */}
+      <Process />
 
       {/* Window Section 
       <Window />*/}

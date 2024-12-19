@@ -6,7 +6,6 @@ body {
   font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
   color: #2c3e50; /* Deep grey for a sophisticated look */
 }
 
@@ -38,8 +37,9 @@ body {
 }
 
 .about-image img {
-  height: 100vh;
-  width: 50vw;
+  height: auto; /* Ensure the height adjusts */
+  width: 50vw; /* Adjust width for larger screens */
+  max-width: 100%; /* Prevent image from overflowing */
 }
 
 .about-header {
@@ -68,99 +68,66 @@ body {
   font-weight: 300;
 }
 
-.ProcessPanel h3{
-  padding-bottom: 5px;
-  max-width: 1350px;
-  margin-top: 70px;
-  margin-left: 4vw;
-  font-size: 32px;
-  color: #1a1a2e;
-  text-align: center;
-  font-weight: 600;
-  border-bottom: 2px solid #dbd5cf;
-}
-
-/*.about-philosophy {
-  background: #f9f7f5;
-  padding: 45px;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-  max-width: 1000px;
-  margin-top: 70px;
-}
-
-.about-philosophy h3 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #1a1a2e;
-  font-weight: 600;
-}
-
-.about-philosophy p {
-  font-size: 17px;
-  line-height: 1.7;
-  color: #2c3e50;
-  font-weight: 400;
-}
-*/
-
-.about-process {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 60px;
-}
-
-.process-step {
-  width: 22%;
-  background: #ffffff;
-  padding: 25px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.process-step:hover {
-  transform: translateY(-10px);
-}
-
-.process-step h4 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #1a1a2e;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-
-.process-step p {
-  font-size: 15px;
-  color: #2c3e50;
-  font-weight: 300;
-}
-
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .about-top {
+    flex-direction: column; /* Stack the image and text vertically */
+    text-align: center; /* Center the text */
+    padding: 40px 10px;
+  }
+
+  .about-image img {
+    width: 80vw; /* Make the image smaller on tablets */
+    height: auto;
+  }
+
+  .about-header {
+    font-size: clamp(
+      24px,
+      6vw,
+      40px
+    ); /* Adjust header size for tablets */
+  }
+
+  .about-description {
+    font-size: clamp(
+      15px,
+      3vw,
+      18px
+    ); /* Adjust description size for tablets */
+    margin: 15px auto;
+  }
+}
+
 @media (max-width: 768px) {
   .about-container {
     padding: 30px 10px;
   }
-  .about-process {
-    flex-direction: column;
-    align-items: center;
+
+  .about-top {
+    flex-direction: column; /* Stack the image and text vertically */
+    gap: 15px; /* Reduce gap between image and text */
+    padding: 30px 10px;
   }
-  .process-step {
-    width: 80%;
-    margin: 20px 0;
+
+  .about-image img {
+    width: 90vw; /* Further reduce image size on small screens */
   }
-  .ProcessPanel h3{
-    display: inline-block;
-    max-width: 1000px;
-    margin-top: 70px;
-    margin-left: 5vw;
-    font-size: 32px;
-    color: #1a1a2e;
-    font-weight: 600;
-    border-bottom: 2px solid #dbd5cf;
+
+  .about-header {
+    font-size: clamp(
+      22px,
+      7vw,
+      36px
+    ); /* Adjust header size for mobile screens */
+  }
+
+  .about-description {
+    font-size: clamp(
+      14px,
+      4vw,
+      17px
+    ); /* Adjust description size for mobile */
+    text-align: justify;
   }
 }

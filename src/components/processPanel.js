@@ -59,24 +59,26 @@ const Process = () => {
   const handlePointClick = (index) => {
     const contentContainer = contentContainerRef.current;
     if (!contentContainer) return;
-
+  
     const scrollHeight = contentContainer.scrollHeight;
     const clientHeight = contentContainer.clientHeight;
     const scrollPosition =
       (index / (states.length - 1)) * (scrollHeight - clientHeight);
-
+  
     contentContainer.scrollTo({
-      top: scrollPosition,
+      top: scrollPosition - 20, // Offset for better visibility
       behavior: "smooth",
     });
   };
+  
 
   return (
     <div className="process-body">
+                <div className="ProcessPanel">
+            <h3>Our Design Process</h3>
+          </div>
       <div className="process-app">
-        <header>
-          <h1></h1>
-        </header>
+
 
         <div className="process-circle-container">
           <div className="process-circle" ref={circleRef}>

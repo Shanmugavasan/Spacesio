@@ -1,9 +1,9 @@
 .process-body {
-  margin-top: 50px;
+  margin-top: 0px;
   font-family: "Semantica MF Medium", Arial, sans-serif;
   background-color: #ffffff;
   color: #000000;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,6 +17,19 @@
   height: 100vh;
   justify-content: flex-start;
   padding-top: 0px;
+}
+
+.ProcessPanel h3{
+  padding-bottom: 5px;
+  max-width: 100vw;
+  margin-left: 4vw;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #dbd5cf;
+  font-family: "Playfair Display", serif; /* Playfair Display font for the heading */
 }
 
 .process-circle-container {
@@ -281,5 +294,15 @@
     width: 100vw;
     height: 100vh;
     padding: 50px 10px 10px 10px;
+  }
+  .ProcessPanel h3{
+    display: inline-block;
+    max-width: 1000px;
+    margin-top: 70px;
+    margin-left: 5vw;
+    font-size: 32px;
+    color: #1a1a2e;
+    font-weight: 600;
+    border-bottom: 2px solid #dbd5cf;
   }
 }
