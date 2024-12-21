@@ -3,28 +3,34 @@
 
 /* Services section */
 .services-section {
-  padding: 0; /* Remove padding on all sides */
-  margin: 0; /* Remove margin to avoid extra space */
+  padding: 0; /* Removed padding to avoid space on left and right */
   padding-top: 75px;
-  padding-bottom: 60px; /* Add space below the section */
-  background-color: #f9f9f9;
-  border-bottom: 2px solid #f4f4f4;
+  background: #f9f9f9;
+  display: flex;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  flex-direction: column;
   font-family: "Playfair Display", serif;
+  margin: 0; /* Removed margin to avoid extra space */
   box-sizing: border-box;
-  width: 100%; /* Ensures full width */
+}
+
+.services-underline{
+  background-color: #888;
+  align-self: center;
+  width: 280px;
+  border-radius: 500px;
+  height: 3px;
 }
 
 /* Flex container for the services */
 .service-container {
   display: flex;
+  align-self: center;
   justify-content: space-between; /* Distribute items evenly */
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
   gap: 20px; /* Space between items */
   width: 90%; /* Full width of the parent */
-  margin: 4vw; /* Remove any extra space around the container */
+  margin: 2vw; /* Remove any extra space around the container */
   padding: 0; /* No padding inside the container */
   box-sizing: border-box;
 }

@@ -158,6 +158,7 @@ const ProjectSection = () => {
         id="projects"
       >
         <h2 className="project-heading">Our Projects</h2>
+        <span className="project-underline"></span>
         <div className="project-list">
           {projects.map((project) => (
             <div key={project.id} className="project-card">

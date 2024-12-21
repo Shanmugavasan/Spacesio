@@ -1,26 +1,35 @@
+/* Import Playfair Display font */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
+
 /* Portfolio Section */
 .portfolio-section {
-  padding: 50px 20px;
-  background: #f7f7f7;
-  text-align: center;
-  font-family: "Playfair Display", serif; /* Apply Playfair Display font */
-  position: relative;
-  overflow: hidden; /* Hide overflowing content */
+  padding: 0; /* Removed padding to avoid space on left and right */
+  padding-top: 25px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+  margin: 0; /* Removed margin to avoid extra space */
+  box-sizing: border-box;
 }
-
-
 
 /* Portfolio Heading */
 .portfolio-heading {
   font-size: 36px;
   font-weight: bold;
   color: #333;
-  border-bottom: 1px solid #888;
-  margin-bottom: 30px;
-  text-align: left;
-  display: flex;
-  margin: 0px 0px 35px 10px;
+  text-align: center;
+  justify-self: center;
+  display: block;
   font-family: "Playfair Display", serif; /* Ensure the heading uses Playfair Display */
+}
+.portfolio-underline{
+  background-color: #888;
+  margin-bottom: 15px;
+  align-self: center;
+  width: 170px;
+  border-radius: 500px;
+  height: 3px;
 }
 
 /* Image grid setup for the portfolio items */

@@ -49,6 +49,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio-section" id="portfolio">
       <h2 className="portfolio-heading">Gallery</h2>
+      <span className="portfolio-underline"></span>
       <div className="image-grid">
         {portfolioImages.map((image, index) => (
           <div key={index} className="portfolio-item">

@@ -17,13 +17,21 @@
 
 /* Project Heading */
 .project-heading {
-  font-size: 2.5rem;
+  font-size: 36px;
   font-weight: bold;
-  margin-bottom: 50px;
   color: #333;
   text-align: center;
-  margin: 0px 0px 40px 4vw;
-  font-family: "Playfair Display", serif; /* Playfair Display font for the heading */
+  justify-self: center;
+  display: block;
+  font-family: "Playfair Display", serif; /* Ensure the heading uses Playfair Display */
+}
+.project-underline{
+  background-color: #888;
+  margin-bottom: 30px;
+  align-self: center;
+  width: 250px;
+  border-radius: 500px;
+  height: 3px;
 }
 
 /* Project List and Cards */
