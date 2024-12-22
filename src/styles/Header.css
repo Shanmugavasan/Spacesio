@@ -8,6 +8,7 @@ body {
   background: #000; /* Set background to black */
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
