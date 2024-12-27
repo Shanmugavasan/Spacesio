@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/Spacesio/static/css/main.c33b94fa.css",
-    "main.js": "/Spacesio/static/js/main.23e1f120.js",
+    "main.css": "/Spacesio/static/css/main.c76e6d92.css",
+    "main.js": "/Spacesio/static/js/main.855c0bbe.js",
     "static/js/488.aa4f6714.chunk.js": "/Spacesio/static/js/488.aa4f6714.chunk.js",
-    "static/media/Spacesio.png": "/Spacesio/static/media/Spacesio.ac8b22bd19a0fc46d99d.png",
     "static/media/row-3-column-2 (1).png": "/Spacesio/static/media/row-3-column-2 (1).c26634cd4b0fa2dc3dde.png",
     "static/media/row-3-column-1 (1).png": "/Spacesio/static/media/row-3-column-1 (1).c0e166a91515f9c1caf9.png",
     "static/media/row-2-column-1 (1).png": "/Spacesio/static/media/row-2-column-1 (1).5f9c2ce69683bf68ae46.png",
@@ -14,6 +13,7 @@
     "static/media/row-1-column-3 (1).png": "/Spacesio/static/media/row-1-column-3 (1).93c6242a9a6645c14aa8.png",
     "static/media/row-1-column-2 (1).png": "/Spacesio/static/media/row-1-column-2 (1).69a4e06e980d82a439c8.png",
     "static/media/row-3-column-2.png": "/Spacesio/static/media/row-3-column-2.22b593b3564679f3995e.png",
+    "static/media/black blur.jpeg": "/Spacesio/static/media/black blur.c5831ed08cd0a640d9e9.jpeg",
     "static/media/1-1.png": "/Spacesio/static/media/1-1.90767c3c9212b43f7969.png",
     "static/media/12.png": "/Spacesio/static/media/12.837cd679d39e99ce9509.png",
     "static/media/8.png": "/Spacesio/static/media/8.b36f79f6fd6b07549944.png",
@@ -50,12 +50,12 @@
     "static/media/workmen-installing-icon-vector.jpg": "/Spacesio/static/media/workmen-installing-icon-vector.867fba6d6ba4f7de9bce.jpg",
     "static/media/spacesavingfurniture.jpg": "/Spacesio/static/media/spacesavingfurniture.b38f7320668d432fac7e.jpg",
     "index.html": "/Spacesio/index.html",
-    "main.c33b94fa.css.map": "/Spacesio/static/css/main.c33b94fa.css.map",
-    "main.23e1f120.js.map": "/Spacesio/static/js/main.23e1f120.js.map",
+    "main.c76e6d92.css.map": "/Spacesio/static/css/main.c76e6d92.css.map",
+    "main.855c0bbe.js.map": "/Spacesio/static/js/main.855c0bbe.js.map",
     "488.aa4f6714.chunk.js.map": "/Spacesio/static/js/488.aa4f6714.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c33b94fa.css",
-    "static/js/main.23e1f120.js"
+    "static/css/main.c76e6d92.css",
+    "static/js/main.855c0bbe.js"
   ]
 }
