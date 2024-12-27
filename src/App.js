@@ -3,6 +3,7 @@ import Header from "./components/Header"; // Import the Header component
 import Blur from "./components/Blur"; // Import the blurred background component
 import Hero from "./components/Hero"; // Import the Hero component
 import About from "./components/About"; // Import the About section component
+import WhyUs from "./components/whyus.js"; // Import the WhyUs section component
 import Services from "./components/Services"; // Import the Services section
 import ProjectSection from "./components/ProjectSection"; // Import the Project section
 import TestimonialSection from "./components/TestimonialSection"; // Import the Testimonial section
@@ -26,7 +27,7 @@ const App = () => {
 
       {/* About section - rendered below Hero */}
       <About />
-      
+      {/*<WhyUs />*/}
       {/* Process section */}
       <Process />
 

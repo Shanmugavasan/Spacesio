@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Blur.css"; // Import styles for the background (Ensure this path is correct)
-import bgImage from "../assets/Spacesio.png"; // Correct path for the background image
+import bgImage from "../assets/black blur.jpeg"; // Correct path for the background image
 
 const Blur = ({ children }) => {
   return (

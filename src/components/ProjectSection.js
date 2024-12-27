@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "../styles/ProjectSection.css";
 
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+
 
 // Import assets
 import Project1_1 from "../assets/Divya's Residence/15.jpg";
@@ -140,8 +141,27 @@ const projects = [
   },
 ];
 
+// Projects Data (Already defined in your code)
+
+// Main Component
 const ProjectSection = () => {
   const [activeProject, setActiveProject] = useState(null);
+  const [currentImageIndexes, setCurrentImageIndexes] = useState(
+    projects.map(() => 0) // Track the current image index for each project
+  );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndexes((prevIndexes) =>
+        prevIndexes.map((currentIndex, projectIndex) => {
+          const totalImages = projects[projectIndex].images.length;
+          return (currentIndex + 1) % totalImages; // Cycle to the next image
+        })
+      );
+    }, 3000); // Change images every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
 
   const openLightbox = (projectId) => {
     setActiveProject(projects.find((project) => project.id === projectId));
@@ -157,17 +177,17 @@ const ProjectSection = () => {
         className={`project-section ${activeProject ? "blurred" : ""}`}
         id="projects"
       >
-        <h2 className="project-heading">Our Projects</h2>
+        <h2 className="project-heading">OUR PROJECTS</h2>
         <span className="project-underline"></span>
         <div className="project-list">
-          {projects.map((project) => (
+          {projects.map((project, projectIndex) => (
             <div key={project.id} className="project-card">
               <div
                 className="project-preview"
                 onClick={() => openLightbox(project.id)}
               >
                 <img
-                  src={project.images[0]}
+                  src={project.images[currentImageIndexes[projectIndex]]}
                   alt={`${project.title} Preview`}
                   className="project-thumbnail"
                 />

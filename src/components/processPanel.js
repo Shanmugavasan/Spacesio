@@ -22,13 +22,13 @@ const states = [
     title: "3. Material & Design Selection",
     description:
       "We help you select the perfect materials, textures, and finishes to bring your space to life. From furniture to lighting, every detail is chosen with care to reflect your personal style.",
-    image: img3,
+    image: img4,
   },
   {
     title: "4. Execution",
     description:
       "Our skilled team manages the entire execution process, collaborating with trusted contractors and artisans. We ensure your space is brought to life with precision, quality, and a seamless experience.",
-    image: img4,
+    image: img3,
   },
 ];
 
@@ -75,7 +75,8 @@ const handlePointClick = (index) => {
   return (
     <div className="process-body">
                 <div className="ProcessPanel">
-            <h3>Our Design Process</h3>
+            <h3>How to design your
+            dream space?</h3>
           </div>
       <div className="process-app">
 

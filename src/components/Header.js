@@ -3,18 +3,22 @@ import "../styles/Header.css";
 import brandlogo from "../assets/brand-logo.png"; // Ensure this path is correct
 
 const Header = () => {
-  // State to manage the hamburger menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Function to handle smooth scrolling to a section
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const offset = 100; // Adjust this value to scroll higher or lower
+      const elementPosition = element.offsetTop;
+      const scrollToPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: scrollToPosition,
+        behavior: "smooth",
+      });
     }
   };
 
-  // Toggle the hamburger menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -26,7 +30,6 @@ const Header = () => {
           <img src={brandlogo} alt="Brand Logo" className="header-logo" />
         </a>
 
-        {/* Hamburger Menu Icon */}
         <div
           className={`hamburger ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
@@ -36,7 +39,6 @@ const Header = () => {
           <span className="bar"></span>
         </div>
 
-        {/* Navbar links */}
         <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
           <ul className="nav-links">
             <li>
@@ -69,7 +71,7 @@ const Header = () => {
             </li>
             <li>
               <a href="#contact" onClick={() => scrollToSection("contact")}>
-                Contact
+                Contact Us
               </a>
             </li>
           </ul>

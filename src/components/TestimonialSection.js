@@ -49,7 +49,15 @@ const TestimonialSection = () => {
 
   return (
     <div className="testimonial-section" id="testimonials">
-      <h2 className="testimonial-heading">What Our Clients Say</h2>
+      <div className="testimonial-heading">
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div className="testimonial-description">
+        <p>
+          At <strong>Spacesio Design Studio</strong>, we transform your dreams into reality. <br />Why
+          say another word, when the spaces we create speak for themselves ?!
+        </p>
+      </div>
       <div className="testimonial-slider">
         <div className="testimonial-card">
           <div className="testimonial-content">

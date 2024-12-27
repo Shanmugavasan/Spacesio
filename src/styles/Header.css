@@ -1,18 +1,5 @@
 /* General Body Styles */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif; /* Updated font */
-  background: #000; /* Set background to black */
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
 
 /* Header Styles */
 .header {
@@ -20,16 +7,20 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
-  backdrop-filter: blur(500px); /* Adds a blur effect behind the navbar */
+  z-index: 1000;
+  background-color: rgba(140, 140, 140, 0.7); /* White with 80% opacity */
+  backdrop-filter: blur(10px); /* Adds a blur effect behind the navbar */
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
+
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px; /* Add padding to create space around the navbar */
-  background-color: rgba(0, 0, 0, 0); /* Transparent black background */
+  background-color: rgba(255, 255, 255, 0); /* Transparent black background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
   position: relative; /* Ensure hamburger can be positioned relative to this container */
 }
