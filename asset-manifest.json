@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Spacesio/static/css/main.cdf41253.css",
-    "main.js": "/Spacesio/static/js/main.d0ba7a99.js",
+    "main.css": "/Spacesio/static/css/main.b3019073.css",
+    "main.js": "/Spacesio/static/js/main.a3110d30.js",
     "static/js/488.aa4f6714.chunk.js": "/Spacesio/static/js/488.aa4f6714.chunk.js",
     "static/media/row-3-column-2 (1).png": "/Spacesio/static/media/row-3-column-2 (1).c26634cd4b0fa2dc3dde.png",
     "static/media/row-3-column-1 (1).png": "/Spacesio/static/media/row-3-column-1 (1).c0e166a91515f9c1caf9.png",
@@ -51,12 +51,12 @@
     "static/media/workmen-installing-icon-vector.jpg": "/Spacesio/static/media/workmen-installing-icon-vector.867fba6d6ba4f7de9bce.jpg",
     "static/media/spacesavingfurniture.jpg": "/Spacesio/static/media/spacesavingfurniture.b38f7320668d432fac7e.jpg",
     "index.html": "/Spacesio/index.html",
-    "main.cdf41253.css.map": "/Spacesio/static/css/main.cdf41253.css.map",
-    "main.d0ba7a99.js.map": "/Spacesio/static/js/main.d0ba7a99.js.map",
+    "main.b3019073.css.map": "/Spacesio/static/css/main.b3019073.css.map",
+    "main.a3110d30.js.map": "/Spacesio/static/js/main.a3110d30.js.map",
     "488.aa4f6714.chunk.js.map": "/Spacesio/static/js/488.aa4f6714.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdf41253.css",
-    "static/js/main.d0ba7a99.js"
+    "static/css/main.b3019073.css",
+    "static/js/main.a3110d30.js"
   ]
 }
