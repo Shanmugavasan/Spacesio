@@ -8,7 +8,6 @@ import "../styles/ProjectSection.css";
 
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
-
 // Import assets
 import Project1_1 from "../assets/Divya's Residence/15.jpg";
 import Project1_2 from "../assets/Divya's Residence/13.jpg";
@@ -145,6 +144,7 @@ const projects = [
 
 // Main Component
 const ProjectSection = () => {
+  const [fadeEffect, setFadeEffect] = useState(projects.map(() => true)); // Initial fade-in
   const [activeProject, setActiveProject] = useState(null);
   const [currentImageIndexes, setCurrentImageIndexes] = useState(
     projects.map(() => 0) // Track the current image index for each project
@@ -152,12 +152,17 @@ const ProjectSection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndexes((prevIndexes) =>
-        prevIndexes.map((currentIndex, projectIndex) => {
-          const totalImages = projects[projectIndex].images.length;
-          return (currentIndex + 1) % totalImages; // Cycle to the next image
-        })
-      );
+      setFadeEffect(projects.map(() => false)); // Start fade-out
+
+      setTimeout(() => {
+        setCurrentImageIndexes((prevIndexes) =>
+          prevIndexes.map((currentIndex, projectIndex) => {
+            const totalImages = projects[projectIndex].images.length;
+            return (currentIndex + 1) % totalImages; // Cycle to the next image
+          })
+        );
+        setFadeEffect(projects.map(() => true)); // Start fade-in
+      }, 1000); // Wait for fade-out transition to complete
     }, 3000); // Change images every 3 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
@@ -189,7 +194,9 @@ const ProjectSection = () => {
                 <img
                   src={project.images[currentImageIndexes[projectIndex]]}
                   alt={`${project.title} Preview`}
-                  className="project-thumbnail"
+                  className={`project-thumbnail ${
+                    fadeEffect[projectIndex] ? "visible" : "hidden"
+                  }`}
                 />
               </div>
               <h3 className="project-title">{project.title}</h3>

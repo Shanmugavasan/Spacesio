@@ -66,6 +66,12 @@
   width: 100%; /* Make the image fill the width of the card */
   height: 400px; /* Adjust height proportionally */
   object-fit: scale-down; /* Ensure the image covers the card proportionally */
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  justify-items: center;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
