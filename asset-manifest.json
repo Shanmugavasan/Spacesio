@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Spacesio/static/css/main.c76e6d92.css",
-    "main.js": "/Spacesio/static/js/main.855c0bbe.js",
+    "main.css": "/Spacesio/static/css/main.cdf41253.css",
+    "main.js": "/Spacesio/static/js/main.d0ba7a99.js",
     "static/js/488.aa4f6714.chunk.js": "/Spacesio/static/js/488.aa4f6714.chunk.js",
     "static/media/row-3-column-2 (1).png": "/Spacesio/static/media/row-3-column-2 (1).c26634cd4b0fa2dc3dde.png",
     "static/media/row-3-column-1 (1).png": "/Spacesio/static/media/row-3-column-1 (1).c0e166a91515f9c1caf9.png",
@@ -28,6 +28,7 @@
     "static/media/4.jpg": "/Spacesio/static/media/4.e79379de952a4cd280f2.jpg",
     "static/media/7.jpg": "/Spacesio/static/media/7.812c65ea6b971ce830cb.jpg",
     "static/media/5.jpg": "/Spacesio/static/media/5.d2b8a4b5a7466e5fbb71.jpg",
+    "static/media/background-doodle.jpg": "/Spacesio/static/media/background-doodle.7f21250d8072519579ef.jpg",
     "static/media/11.jpg": "/Spacesio/static/media/11.8e7e31cb338c6251fa87.jpg",
     "static/media/6.jpg": "/Spacesio/static/media/6.912e491781c9c41f28af.jpg",
     "static/media/8.jpg": "/Spacesio/static/media/8.6d06f311ad4bbbe0660d.jpg",
@@ -50,12 +51,12 @@
     "static/media/workmen-installing-icon-vector.jpg": "/Spacesio/static/media/workmen-installing-icon-vector.867fba6d6ba4f7de9bce.jpg",
     "static/media/spacesavingfurniture.jpg": "/Spacesio/static/media/spacesavingfurniture.b38f7320668d432fac7e.jpg",
     "index.html": "/Spacesio/index.html",
-    "main.c76e6d92.css.map": "/Spacesio/static/css/main.c76e6d92.css.map",
-    "main.855c0bbe.js.map": "/Spacesio/static/js/main.855c0bbe.js.map",
+    "main.cdf41253.css.map": "/Spacesio/static/css/main.cdf41253.css.map",
+    "main.d0ba7a99.js.map": "/Spacesio/static/js/main.d0ba7a99.js.map",
     "488.aa4f6714.chunk.js.map": "/Spacesio/static/js/488.aa4f6714.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c76e6d92.css",
-    "static/js/main.855c0bbe.js"
+    "static/css/main.cdf41253.css",
+    "static/js/main.d0ba7a99.js"
   ]
 }
