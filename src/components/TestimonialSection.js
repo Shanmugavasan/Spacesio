@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/TestimonialSection.css";
 
 const testimonials = [
@@ -47,17 +47,16 @@ const TestimonialSection = () => {
     );
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000); // Change testimonial every 5 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="testimonial-section" id="testimonials">
-      <div className="testimonial-heading">
-        <h2>What Our Clients Say</h2>
-      </div>
-      <div className="testimonial-description">
-        <p>
-          At <strong>Spacesio Design Studio</strong>, we transform your dreams into reality. <br />Why
-          say another word, when the spaces we create speak for themselves ?!
-        </p>
-      </div>
+      <h2 className="testimonial-heading">What Our Clients Say</h2>
       <div className="testimonial-slider">
         <div className="testimonial-card">
           <div className="testimonial-content">

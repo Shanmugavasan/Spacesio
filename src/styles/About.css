@@ -1,151 +1,100 @@
-/* Import Playfair Display Font */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap");
+/* General section styling */
+section {
+  width: 100%;
+  max-width: 100%; /* Ensure the section takes the full width */
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-color: black;
+}
 
+/* Grid layout for left, center, and right content */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
 
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
-/* About Section Styles */
-.about-container {
+/* Styling for the image container */
+.overflow-hidden {
+  width: 100%; /* Ensure the container spans the full width */
+  height: 100vh; /* Make the container height cover the entire viewport */
+  overflow: hidden;
+  position: relative;
+  margin: 0; /* Remove any default margins */
+}
+
+.overflow-hidden img {
+  width: 100%; /* Make the image take the full width */
+  height: 100%; /* Ensure the image takes the full height of its container */
+  object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
+  position: absolute; /* Position the image absolutely within the container */
+  top: 0;
+  left: 0;
+}
+
+/* Center content alignment and styling */
+.flex {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 50px 20px;
-  background: #ffffff;
+  align-items: center;
   text-align: justify;
-  padding-top: 50px;
+  padding: 0 1rem;
 }
 
-.about-top {
-  display: flex;
-  flex-direction: row; /* Align items in a row */
-  align-items: center; /* Align items at the start vertically */
-  justify-content: center; /* Center the content horizontally */
-  gap: 20px; /* Add spacing between the image and the text */
-  padding: 40px 10px 40px 0px;
-  background: #f9f7f5;
-  /* Add the following rules */
-  position: relative; /* Ensure it can stretch properly */
-  left: 0;
-  right: 0;
-  height: 95vh;
-  width: 100vw; /* Full width of the viewport */
-  margin-left: calc(-50vw + 50%); /* Override parent constraints */
+.max-w-md {
+  max-width: 28rem;
 }
 
-.about-image img {
-  width: 40vw; /* Adjust width for larger screens */
-  height: 80vh;
-  margin-top: 5px;
-  max-width: 100%; /* Prevent image from overflowing */
+/* Subtitle styling */
+.text-sm {
+  font-size: 1.875rem;
+  letter-spacing: 0.05em;
+  color: #666;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
-.about-header {
-  font-size: clamp(
-    28px,
-    5vw,
-    44px
-  ); /* Minimum: 28px, Preferred: 5% of viewport width, Maximum: 44px */
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #1a1a2e;
-  letter-spacing: 1.5px;
-  text-transform: capitalize;
+/* Title styling */
+.text-3xl {
+  font-size: 1.875rem;
+  font-family: serif;
+  margin-bottom: 1rem;
 }
 
-.about-description {
-  font-size: clamp(
-    16px,
-    2vw,
-    19px
-  ); /* Minimum: 16px, Preferred: 2% of viewport width, Maximum: 19px */
-  line-height: 1.9;
-  max-width: 900px;
-  margin: 20px auto;
-  color: #34495e;
-  font-weight: 300;
-}
-.about-philosophy {
-  background: #f9f7f5;
-  padding: 45px;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-  max-width: 1000px;
-  margin-top: 70px;
+/* Paragraph (description) styling */
+.text-gray-600 {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
-.about-philosophy h3 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #1a1a2e;
-  font-weight: 600;
+/* Button styling */
+.bg-black {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.about-philosophy p {
-  font-size: 17px;
-  line-height: 1.7;
-  color: #2c3e50;
-  font-weight: 400;
-}
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .about-top {
-    flex-direction: column; /* Stack the image and text vertically */
-    text-align: center; /* Center the text */
-    padding: 40px 10px;
-  }
-
-  .about-image img {
-    width: 80vw; /* Make the image smaller on tablets */
-    height: auto;
-  }
-
-  .about-header {
-    font-size: clamp(
-      24px,
-      6vw,
-      40px
-    ); /* Adjust header size for tablets */
-  }
-
-  .about-description {
-    font-size: clamp(
-      15px,
-      3vw,
-      18px
-    ); /* Adjust description size for tablets */
-    margin: 15px auto;
-  }
+.bg-black:hover {
+  background-color: #333;
 }
 
+/* Responsiveness for images */
 @media (max-width: 768px) {
-  .about-container {
-    padding: 30px 10px;
-  }
-
-  .about-top {
-    flex-direction: column; /* Stack the image and text vertically */
-    gap: 15px; /* Reduce gap between image and text */
-    padding: 30px 0px 0px 10px;
-  }
-
-  .about-image img {
-    width: 100vw; /* Further reduce image size on small screens */
-  }
-
-  .about-header {
-    font-size: clamp(
-      22px,
-      7vw,
-      36px
-    ); /* Adjust header size for mobile screens */
-  }
-
-  .about-description {
-    font-size: clamp(
-      14px,
-      4vw,
-      17px
-    ); /* Adjust description size for mobile */
-    text-align: justify;
-  }
+  .overflow-hidden {
+    height: 20rem; /* Adjust to smaller height on mobile */
+}
 }
