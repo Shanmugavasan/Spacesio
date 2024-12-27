@@ -12,7 +12,7 @@
   padding: 50px 20px;
   background: #ffffff;
   text-align: justify;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .about-top {
@@ -27,7 +27,7 @@
   position: relative; /* Ensure it can stretch properly */
   left: 0;
   right: 0;
-  height: 80vh;
+  height: 95vh;
   width: 100vw; /* Full width of the viewport */
   margin-left: calc(-50vw + 50%); /* Override parent constraints */
 }

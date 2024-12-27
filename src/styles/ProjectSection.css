@@ -63,22 +63,33 @@
 
 /* Project Thumbnail */
 .project-thumbnail {
-  width: 100%; /* Make the image fill the width of the card */
-  height: 400px; /* Adjust height proportionally */
-  object-fit: scale-down; /* Ensure the image covers the card proportionally */
+  width: 100%;
+  height: 400px;
+  object-fit: scale-down;
   align-items: center;
   align-content: center;
   justify-content: center;
   justify-self: center;
   align-self: center;
   justify-items: center;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.1s ease; /* Added opacity transition */
 }
 
+/* Hover effect */
 .project-thumbnail:hover {
-  transform: scale(1.1); /* Scale image on hover */
+  transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Fade effect */
+.project-thumbnail.hidden {
+  opacity: 0; /* Hide the image during fade-out */
+}
+
+.project-thumbnail.visible {
+  opacity: 1; /* Show the image during fade-in */
+}
+
 
 /* Project Title */
 .project-title {

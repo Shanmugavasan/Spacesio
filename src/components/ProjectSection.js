@@ -162,7 +162,7 @@ const ProjectSection = () => {
           })
         );
         setFadeEffect(projects.map(() => true)); // Start fade-in
-      }, 1000); // Wait for fade-out transition to complete
+      },200); // Wait for fade-out transition to complete
     }, 3000); // Change images every 3 seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount

@@ -4,6 +4,7 @@ import img1 from "../assets/icon01-300x183.png";
 import img2 from "../assets/72869.png";
 import img3 from "../assets/workmen-installing-icon-vector.jpg";
 import img4 from "../assets/OIP.jpg";
+import backgroundImage from "../assets/background-doodle.jpg";
 
 const states = [
   {
@@ -33,6 +34,13 @@ const states = [
 ];
 
 const Process = () => {
+ {/* const divStyle = {
+    backgroundImage: `url(${backgroundImage})`, // Path to your image
+    backgroundSize: "cover", // Ensures the image covers the entire div
+    backgroundPosition: "center", // Centers the image
+    backgroundRepeat: "no-repeat", // Prevents the image from repeating
+  };*/}
+
   const [activeIndex, setActiveIndex] = useState(0);
   const contentContainerRef = useRef(null);
   const circleRef = useRef(null);
@@ -56,31 +64,28 @@ const Process = () => {
     return () => contentContainer.removeEventListener("scroll", handleScroll);
   }, []);
 
-const handlePointClick = (index) => {
-  const contentContainer = contentContainerRef.current;
-  if (!contentContainer) return;
+  const handlePointClick = (index) => {
+    const contentContainer = contentContainerRef.current;
+    if (!contentContainer) return;
 
-  const scrollHeight = contentContainer.scrollHeight;
-  const clientHeight = contentContainer.clientHeight;
-  const scrollPosition =
-    (index / (states.length - 1)) * (scrollHeight - clientHeight);
+    const scrollHeight = contentContainer.scrollHeight;
+    const clientHeight = contentContainer.clientHeight;
+    const scrollPosition =
+      (index / (states.length - 1)) * (scrollHeight - clientHeight);
 
-  contentContainer.scrollTo({
-    top: scrollPosition - 20, // Offset for better visibility
-    behavior: "smooth",
-  });
-};
-
+    contentContainer.scrollTo({
+      top: scrollPosition - 20, // Offset for better visibility
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div className="process-body">
-                <div className="ProcessPanel">
-            <h3>How to design your
-            dream space?</h3>
-          </div>
+    <div className="process-body" style={{/*divStyle*/}}>
+      <div className="ProcessPanel">
+        <h3>How to design your dream space?</h3>
+        <span className="process-underline"></span>
+      </div>
       <div className="process-app">
-
-
         <div className="process-circle-container">
           <div className="process-circle" ref={circleRef}>
             {states.map((_, index) => (

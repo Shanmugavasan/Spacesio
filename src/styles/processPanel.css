@@ -1,9 +1,8 @@
 .process-body {
-  margin-top: 0px;
   font-family: "Semantica MF Medium", Arial, sans-serif;
   background-color: #ffffff;
   color: #000000;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,24 +14,30 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  justify-content: flex-start;
   padding-top: 0px;
 }
 .ProcessPanel{
-  display: inline-block;
+  display: contents;
   align-self: center;
 
 }
 .ProcessPanel h3{
   padding-bottom: 5px;
-  margin-bottom: 50px;
   font-size: 2rem;
-  width: 90vw;
+  width: 100vw;
   font-weight: bold;
   color: #333;
   text-align: center;
-  border-bottom: 2px solid #dbd5cf;
   font-family: "Playfair Display", serif; /* Playfair Display font for the heading */
+}
+
+.ProcessPanel .process-underline{
+  background-color: #888;
+  margin-bottom: 30px;
+  align-self: center;
+  width: 540px;
+  border-radius: 500px;
+  height: 3px;
 }
 
 .process-circle-container {
@@ -157,32 +162,33 @@
 .process-state-description.active {
   opacity: 1;
   transform: translateY(0) scale(1.05); /* Fade in and scale up slightly */
-  margin-top: -5px;
+  margin-top: 0px;
 }
 
 .process-state-description.inactive {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .process-state-description.dim {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .process-content-container {
   width: 50%;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 45%;
   transform: translateY(-50%);
   color: #000000;
   overflow-y: auto;
-  height: 50vh; /* Increased height for scrolling */
+  height: 55vh; /* Increased height for scrolling */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 20px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  border: 1px solid #000000;
   transition: all 0.3s ease-in-out;
 }
 
