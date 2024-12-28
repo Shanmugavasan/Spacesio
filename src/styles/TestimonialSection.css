@@ -4,7 +4,7 @@
   margin-bottom: 20px;
   background: #fff;
   text-align: center;
-  height: 70vh;
+  height: auto; /* Adjusted for responsiveness */
   font-family: "Playfair Display", serif; /* Playfair Display font for the entire section */
   position: relative;
   overflow: hidden;
@@ -41,7 +41,7 @@
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
-  height: 400px;
+  height: auto; /* Adjusted for responsiveness */
   transition: transform 1s ease-in-out;
 }
 
@@ -155,7 +155,38 @@
   }
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness (up to 480px) */
+@media (max-width: 480px) {
+  .testimonial-heading {
+    font-size: 2rem;
+  }
+
+  .testimonial-slider {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .testimonial-card {
+    max-width: 90%;
+    padding: 30px;
+  }
+
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-name {
+    font-size: 1.5rem;
+  }
+
+  .prev-button,
+  .next-button {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablet Responsiveness (up to 768px) */
 @media (max-width: 768px) {
   .testimonial-heading {
     font-size: 2.2rem;
@@ -167,21 +198,63 @@
   }
 
   .testimonial-card {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .testimonial-heading {
-    font-size: 1.8rem;
+    max-width: 80%;
+    padding: 40px;
   }
 
-  .testimonial-card {
-    padding: 30px;
+  .testimonial-text {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-name {
+    font-size: 1.7rem;
   }
 
   .prev-button,
   .next-button {
+    font-size: 2rem;
+  }
+}
+
+/* Landscape Tablet Responsiveness (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .testimonial-heading {
+    font-size: 2.4rem;
+  }
+
+  .testimonial-slider {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .testimonial-card {
+    max-width: 700px;
+    padding: 45px;
+  }
+
+  .testimonial-name {
     font-size: 1.8rem;
+  }
+
+  .prev-button,
+  .next-button {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablet Landscape and Larger */
+@media (min-width: 1024px) {
+  .testimonial-card {
+    max-width: 900px;
+    padding: 50px;
+  }
+
+  .testimonial-heading {
+    font-size: 3rem;
+  }
+
+  .prev-button,
+  .next-button {
+    font-size: 2.5rem;
   }
 }

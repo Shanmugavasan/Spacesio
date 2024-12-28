@@ -14,7 +14,7 @@ const FloatingSocial = () => {
         <FaInstagram size={24} />
       </a>
       <a
-        href="https://wa.me/8056068185"
+        href="https://wa.me/918056068185"
         target="_blank"
         rel="noopener noreferrer"
         className="social-icon whatsapp"
