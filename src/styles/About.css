@@ -1,100 +1,106 @@
 /* General section styling */
-section {
+#about {
   width: 100%;
-  max-width: 100%; /* Ensure the section takes the full width */
-  margin-bottom: 50px;
-  margin-top: 50px;
-  background-color: black;
+  max-width: 100%;
+  margin-bottom: 30px;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    to right,
+    rgba(9, 9, 10, 1),
+    rgba(10, 10, 12, 1),
+    rgba(11, 11, 13, 1),
+    rgba(12, 12, 14, 1),
+    rgba(13, 13, 15, 1),
+    rgba(14, 14, 16, 1),
+    rgba(15, 15, 17, 1),
+    rgba(16, 16, 18, 1),
+    rgba(17, 17, 19, 1),
+    rgba(18, 18, 20, 1),
+    rgba(20, 20, 22, 1),
+    rgba(22, 22, 24, 1),
+    rgba(24, 24, 26, 255),
+    rgba(22, 22, 24, 1),
+    rgba(20, 20, 22, 1),
+    rgba(18, 18, 20, 1),
+    rgba(17, 17, 19, 1),
+    rgba(16, 16, 18, 1),
+    rgba(15, 15, 17, 1),
+    rgba(14, 14, 16, 1),
+    rgba(13, 13, 15, 1),
+    rgba(12, 12, 14, 1),
+    rgba(11, 11, 13, 1),
+    rgba(10, 10, 12, 1),
+    rgba(9, 9, 10, 1)
+  );
 }
 
 /* Grid layout for left, center, and right content */
-.grid {
+.about-grid {
+  padding-top: 25px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 5.5rem;
 }
 
 @media (min-width: 768px) {
-  .grid {
+  .about-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* Styling for the image container */
-.overflow-hidden {
-  width: 100%; /* Ensure the container spans the full width */
-  height: 100vh; /* Make the container height cover the entire viewport */
+.image-container {
+  width: 100%;
+  height: 90vh;
   overflow: hidden;
   position: relative;
-  margin: 0; /* Remove any default margins */
+  margin: 0;
 }
 
-.overflow-hidden img {
-  width: 100%; /* Make the image take the full width */
-  height: 100%; /* Ensure the image takes the full height of its container */
-  object-fit: cover; /* Ensures the image covers the entire area while maintaining aspect ratio */
-  position: absolute; /* Position the image absolutely within the container */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
   top: 0;
   left: 0;
 }
 
 /* Center content alignment and styling */
-.flex {
+.about-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding: 0 1rem;
+  padding: 0 0rem;
 }
 
-.max-w-md {
+.content-wrapper {
   max-width: 28rem;
 }
 
 /* Subtitle styling */
-.text-sm {
-  font-size: 1.875rem;
+.about-subtitle {
+  font-size: 2.875rem;
   letter-spacing: 0.05em;
   color: #666;
   text-align: center;
   margin-bottom: 0.5rem;
 }
 
-/* Title styling */
-.text-3xl {
-  font-size: 1.875rem;
-  font-family: serif;
-  margin-bottom: 1rem;
-}
-
 /* Paragraph (description) styling */
-.text-gray-600 {
+.about-description {
   color: #666;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.6;
-}
-
-/* Button styling */
-.bg-black {
-  background-color: black;
-  color: white;
-  padding: 0.5rem 2rem;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 0.05em;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.bg-black:hover {
-  background-color: #333;
+  font-size: 1.15rem;
 }
 
 /* Responsiveness for images */
 @media (max-width: 768px) {
-  .overflow-hidden {
-    height: 20rem; /* Adjust to smaller height on mobile */
-}
+  .image-container {
+    height: 20rem; /* Adjust to smaller height on mobile */
+  }
 }

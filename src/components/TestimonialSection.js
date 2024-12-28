@@ -50,7 +50,7 @@ const TestimonialSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000); // Change testimonial every 5 seconds
+    }, 2000); // Change testimonial every 3 seconds
     return () => clearInterval(interval);
   }, []);
 

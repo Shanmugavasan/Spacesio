@@ -8,16 +8,28 @@ const Header = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 100; // Adjust this value to scroll higher or lower
-      const elementPosition = element.offsetTop;
+      let offset = 0;
+      if(element.id === "about") {
+        offset = 55;
+      }
+      else{
+        offset = 10;
+      }
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY; // Calculate the absolute position
       const scrollToPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: scrollToPosition,
-        behavior: "smooth",
-      });
+  
+      // Add a slight delay to ensure React has rendered the target element
+      setTimeout(() => {
+        window.scrollTo({
+          top: scrollToPosition,
+          behavior: "smooth",
+        });
+      }, 0); // Delay can be increased if rendering is slow
     }
   };
+  
+  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
