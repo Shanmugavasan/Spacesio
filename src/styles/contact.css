@@ -90,6 +90,14 @@
   justify-content: left;
 }
 
+.fa-clipboard-list{
+  margin-right: 2px;
+}
+
+.fa-comment-dots{
+  margin-top: -30px
+}
+
 /* Heading Styling */
 .info-box h3 {
   font-size: 18px;
