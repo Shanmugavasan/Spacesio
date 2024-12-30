@@ -28,11 +28,12 @@ const App = () => {
       {/* About section - rendered below Hero */}
       <About />
       {/*<WhyUs />*/}
+      
+      {/* Window Section */}
+      <Window />
       {/* Process section */}
       <Process />
 
-      {/* Window Section 
-      <Window />*/}
 
       {/* Services section */}
       <Services />
