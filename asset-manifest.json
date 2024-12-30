@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Spacesio/static/css/main.bf2971f0.css",
+    "main.css": "/Spacesio/static/css/main.f65c6ec0.css",
     "main.js": "/Spacesio/static/js/main.7996d326.js",
     "static/js/488.aa4f6714.chunk.js": "/Spacesio/static/js/488.aa4f6714.chunk.js",
     "static/media/row-3-column-2 (1).png": "/Spacesio/static/media/row-3-column-2 (1).c26634cd4b0fa2dc3dde.png",
@@ -51,12 +51,12 @@
     "static/media/workmen-installing-icon-vector.jpg": "/Spacesio/static/media/workmen-installing-icon-vector.867fba6d6ba4f7de9bce.jpg",
     "static/media/spacesavingfurniture.jpg": "/Spacesio/static/media/spacesavingfurniture.b38f7320668d432fac7e.jpg",
     "index.html": "/Spacesio/index.html",
-    "main.bf2971f0.css.map": "/Spacesio/static/css/main.bf2971f0.css.map",
+    "main.f65c6ec0.css.map": "/Spacesio/static/css/main.f65c6ec0.css.map",
     "main.7996d326.js.map": "/Spacesio/static/js/main.7996d326.js.map",
     "488.aa4f6714.chunk.js.map": "/Spacesio/static/js/488.aa4f6714.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf2971f0.css",
+    "static/css/main.f65c6ec0.css",
     "static/js/main.7996d326.js"
   ]
 }
