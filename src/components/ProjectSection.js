@@ -182,7 +182,7 @@ const ProjectSection = () => {
         className={`project-section ${activeProject ? "blurred" : ""}`}
         id="projects"
       >
-        <h2 className="project-heading">OUR PROJECTS</h2>
+        <h2 className="project-heading">Our Projects</h2>
         <span className="project-underline"></span>
         <div className="project-list">
           {projects.map((project, projectIndex) => (

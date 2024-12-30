@@ -107,7 +107,7 @@ export default function App() {
   return (
     <div className="contact-body" id="contact">
       <div className="contact-container">
-        <h1 className="contact-heading">CONTACT US</h1>
+        <h1 className="contact-heading">Contact Us</h1>
         <span className="contact-underline"></span>
         <div className={`container`}>
           {/* Left Section: Vertical Info Boxes */}

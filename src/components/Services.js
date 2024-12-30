@@ -7,7 +7,7 @@ import staircase from "../assets/furniture.jpg";
 const Services = () => {
   return (
     <div className="services-section" id="services">
-      <h2 className="services-heading">OUR PRODUCTS</h2>
+      <h2 className="services-heading">Our Products</h2>
       <span className="services-underline"></span>
       <div className="service-container">
         <div className="service-item">

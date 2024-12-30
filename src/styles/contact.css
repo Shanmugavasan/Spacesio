@@ -12,7 +12,7 @@
 .contact-heading {
   justify-items: center;
   text-align: center;
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 300;
   color: #333;
 }
@@ -49,7 +49,7 @@
   width: 70%; /* Increased width for better centering */
   display: flex;
   flex-direction: row;
-  gap: 105px;
+  gap: 55px;
   align-items: center; /* Center align the info boxes */
   justify-content: center;
   box-sizing: border-box; /* Include padding/border in width calculation */
