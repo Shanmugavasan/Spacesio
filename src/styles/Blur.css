@@ -2,12 +2,18 @@
   margin-top: 0px;
   position: relative;
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
   overflow: hidden;
+  background: radial-gradient(
+    circle,
+     rgba(10, 10, 10, 0.2) 25%, /* Softer black with 50% opacity */
+    white 45%  /* Transition to white at 70% */
+  );
 }
+
 
 .blur-image {
   position: absolute;

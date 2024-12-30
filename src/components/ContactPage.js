@@ -195,7 +195,7 @@ export default function App() {
               <button type="submit" disabled={isSubmitting}>
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
-              <h2>Prepare to walk into your space and truly be inspired</h2>
+              <h2 className="contact-down-content">Prepare to walk into your space and truly be inspired!</h2>
             </form>
           </div>
         </div>

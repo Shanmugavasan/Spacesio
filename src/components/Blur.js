@@ -6,8 +6,8 @@ const Blur = ({ children }) => {
   return (
     <div className="blur-home">
       <div id="home" className="blur-container">
-        <img src={bgImage} alt="Background" className="blur-image" />
-        <div className="blur-content">{children}</div>{" "}
+        {/*<img src={bgImage} alt="Background" className="blur-image" />*/}
+        <div className="blur-content">{children}</div>
         {/* Renders child components (Hero) */}
       </div>
     </div>

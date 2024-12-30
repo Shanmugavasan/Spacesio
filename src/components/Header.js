@@ -10,7 +10,7 @@ const Header = () => {
     if (element) {
       let offset = 0;
       if(element.id === "about") {
-        offset = 55;
+        offset = 100;
       }
       else{
         offset = 10;

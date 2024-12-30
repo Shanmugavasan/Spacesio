@@ -73,6 +73,7 @@
   height: 100%;
   object-fit: cover;
   backface-visibility: hidden;
+  filter: grayscale(70%); /* Convert the image to grayscale */
   top: 0;
   left: 0;
 }

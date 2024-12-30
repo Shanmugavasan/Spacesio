@@ -16,7 +16,7 @@
 /* Portfolio Heading */
 .portfolio-heading {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 300;
   color: #333;
   text-align: center;
   justify-self: center;
@@ -27,7 +27,7 @@
   background-color: #888;
   margin-bottom: 15px;
   align-self: center;
-  width: 150px;
+  width: 140px;
   height: 3px;
 }
 

@@ -54,7 +54,7 @@ const Hero = () => {
     gridItems.forEach((item, index) => {
       setTimeout(() => {
         item.classList.add("flip"); // Add the class to flip
-      }, index * 500); // Delay of 500ms between flips
+      }, index * 200); // Delay of 200ms between flips
     });
   }, []);
 
