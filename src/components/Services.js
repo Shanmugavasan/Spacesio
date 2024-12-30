@@ -35,7 +35,7 @@ const Services = () => {
             <h3 className="service-title">Folding Dining Tables</h3>
             <p className="service-description">
               Reclaim your Space with
-              <p>Folding Dining Table, Fold it away with ease.</p>
+              <p>Folding Dining Table, Fold it away with ease</p>
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Services = () => {
             <h3 className="service-title">Staircase Storage</h3>
             <p className="service-description">
               Elevate your space with
-              <p>Storage stairs, that blends function and style.</p>
+              <p>Storage stairs, that blends function and style</p>
             </p>
           </div>
         </div>

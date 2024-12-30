@@ -52,7 +52,7 @@
   align-items: center;
   min-width: 300px; /* Ensure a minimum width */
   max-width: 360px; /* Set a max width for cards */
-  height: 500px; /* Allow height to adjust dynamically */
+  height: 510px; /* Allow height to adjust dynamically */
   padding: 20px;
   box-sizing: border-box;
   border-radius: 10px;
