@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/Spacesio/static/css/main.1109aa73.css",
-    "main.js": "/Spacesio/static/js/main.c4f4e059.js",
+    "main.css": "/Spacesio/static/css/main.28fed0eb.css",
+    "main.js": "/Spacesio/static/js/main.f4f80600.js",
     "static/js/488.aa4f6714.chunk.js": "/Spacesio/static/js/488.aa4f6714.chunk.js",
-    "static/media/row-3-column-2 (1).png": "/Spacesio/static/media/row-3-column-2 (1).c26634cd4b0fa2dc3dde.png",
-    "static/media/row-3-column-1 (1).png": "/Spacesio/static/media/row-3-column-1 (1).c0e166a91515f9c1caf9.png",
-    "static/media/row-2-column-1 (1).png": "/Spacesio/static/media/row-2-column-1 (1).5f9c2ce69683bf68ae46.png",
-    "static/media/row-2-column-2 (1).png": "/Spacesio/static/media/row-2-column-2 (1).b4a51fa0d35cda758228.png",
-    "static/media/row-2-column-3 (1).png": "/Spacesio/static/media/row-2-column-3 (1).8296f6eee67f7f88e479.png",
-    "static/media/row-1-column-1 (2).png": "/Spacesio/static/media/row-1-column-1 (2).2bfe586fd2b1015beac3.png",
-    "static/media/row-3-column-3 (1).png": "/Spacesio/static/media/row-3-column-3 (1).62c6b93a72e0bf7f47aa.png",
-    "static/media/row-1-column-3 (1).png": "/Spacesio/static/media/row-1-column-3 (1).93c6242a9a6645c14aa8.png",
-    "static/media/row-1-column-2 (1).png": "/Spacesio/static/media/row-1-column-2 (1).69a4e06e980d82a439c8.png",
+    "static/media/row-1-column-2 (1).png": "/Spacesio/static/media/row-1-column-2 (1).f1881a996dc9dad51782.png",
+    "static/media/row-1-column-1 (2).png": "/Spacesio/static/media/row-1-column-1 (2).5bbbc7785a594e99939a.png",
+    "static/media/row-3-column-1 (1).png": "/Spacesio/static/media/row-3-column-1 (1).fd21ffe492d40c1505ca.png",
+    "static/media/row-1-column-3 (1).png": "/Spacesio/static/media/row-1-column-3 (1).a1dee0d50852759baa7f.png",
     "static/media/row-3-column-2.png": "/Spacesio/static/media/row-3-column-2.22b593b3564679f3995e.png",
+    "static/media/row-2-column-2 (1).png": "/Spacesio/static/media/row-2-column-2 (1).08a3e2968e94d64957f7.png",
+    "static/media/row-2-column-1 (1).png": "/Spacesio/static/media/row-2-column-1 (1).44510e24896c1a71b533.png",
     "static/media/black blur.jpeg": "/Spacesio/static/media/black blur.c5831ed08cd0a640d9e9.jpeg",
     "static/media/1-1.png": "/Spacesio/static/media/1-1.90767c3c9212b43f7969.png",
     "static/media/12.png": "/Spacesio/static/media/12.837cd679d39e99ce9509.png",
@@ -38,6 +35,7 @@
     "static/media/13.jpg": "/Spacesio/static/media/13.089654f570c8cba2889d.jpg",
     "static/media/Grid0.jpeg": "/Spacesio/static/media/Grid0.caf77689f57cac550de0.jpeg",
     "static/media/9.jpg": "/Spacesio/static/media/9.cc9bc8efd9843fe124e9.jpg",
+    "static/media/row-2-column-3 (1).png": "/Spacesio/static/media/row-2-column-3 (1).f20a1aa3e2f3f5137343.png",
     "static/media/15.jpg": "/Spacesio/static/media/15.514a15fceff40dae4395.jpg",
     "static/media/1.jpg": "/Spacesio/static/media/1.f092ef25793625419b54.jpg",
     "static/media/foldingbed.jpg": "/Spacesio/static/media/foldingbed.1179cdca0ea5f8ab6d71.jpg",
@@ -50,13 +48,15 @@
     "static/media/brand-logo.png": "/Spacesio/static/media/brand-logo.df01453ed7f56c5bae1f.png",
     "static/media/workmen-installing-icon-vector.jpg": "/Spacesio/static/media/workmen-installing-icon-vector.867fba6d6ba4f7de9bce.jpg",
     "static/media/spacesavingfurniture.jpg": "/Spacesio/static/media/spacesavingfurniture.b38f7320668d432fac7e.jpg",
+    "static/media/row-3-column-2 (1).png": "/Spacesio/static/media/row-3-column-2 (1).9044af89f028e355c3b5.png",
+    "static/media/row-3-column-3 (1).png": "/Spacesio/static/media/row-3-column-3 (1).cdd4fdcb21ddd0b59715.png",
     "index.html": "/Spacesio/index.html",
-    "main.1109aa73.css.map": "/Spacesio/static/css/main.1109aa73.css.map",
-    "main.c4f4e059.js.map": "/Spacesio/static/js/main.c4f4e059.js.map",
+    "main.28fed0eb.css.map": "/Spacesio/static/css/main.28fed0eb.css.map",
+    "main.f4f80600.js.map": "/Spacesio/static/js/main.f4f80600.js.map",
     "488.aa4f6714.chunk.js.map": "/Spacesio/static/js/488.aa4f6714.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1109aa73.css",
-    "static/js/main.c4f4e059.js"
+    "static/css/main.28fed0eb.css",
+    "static/js/main.f4f80600.js"
   ]
 }
