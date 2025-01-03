@@ -1,6 +1,6 @@
 /* Testimonial Section */
 .testimonial-section {
-  padding: 70px 20px;
+  padding: 35px 20px;
   margin-bottom: 20px;
   background: #fff;
   text-align: center;
@@ -12,7 +12,7 @@
 
 /* Testimonial Heading */
 .testimonial-heading {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-weight: 300;
   color: #333;
   margin-bottom: 0px;
@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: center;
   background: #fff;
-  padding: 50px;
+  padding: 30px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
   width: 100%;
   max-width: 800px;
@@ -74,13 +74,15 @@
 .testimonial-text {
   font-style: italic;
   font-size: 1.3rem;
-  margin: 15px 0;
+  border-top: 50px;
+  margin: 15px 0px;
   color: #666;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #c3c3c3;
   transition: color 0.3s ease;
 }
 
 .testimonial-name {
-  border-top: 2px solid #c3c3c3;
   font-weight: bold;
   font-size: 1.8rem;
   margin-top: 10px;
@@ -90,6 +92,7 @@
 .testimonial-role {
   font-size: 1rem;
   color: #888;
+  margin-top: -25px;
 }
 
 /* Navigation Buttons */

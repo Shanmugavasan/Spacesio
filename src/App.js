@@ -24,16 +24,13 @@ const App = () => {
       <Blur>
         <Hero />
       </Blur>
-
-      {/* About section - rendered below Hero */}
       <About />
       {/*<WhyUs />*/}
-      
+
       {/* Window Section */}
       <Window />
       {/* Process section */}
       <Process />
-
 
       {/* Services section */}
       <Services />
