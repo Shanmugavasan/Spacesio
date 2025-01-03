@@ -41,10 +41,22 @@
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
-  gap: 50px; /* Space between menu items */
+  gap: 40px; /* Space between menu items */
   margin: 0;
   padding: 0;
+  position: relative;
 }
+
+.nav-links::before {
+  content: "";
+  position: absolute;
+  left: -20px; /* Adjust the distance from the links */
+  top: -65%;
+  height: 250%;
+  width: 2px; /* Thickness of the line */
+  background-color: rgba(55, 55, 55, 0.3); /* Color of the line */
+}
+
 
 .nav-links li {
   display: inline-block;
