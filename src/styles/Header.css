@@ -99,6 +99,9 @@
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+  .nav-links::before {
+    height: 0%;
+}
   .header-container {
     flex-direction: column;
     padding: 15px 20px;

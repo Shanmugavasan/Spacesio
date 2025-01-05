@@ -189,6 +189,9 @@ body {
 }
 
 @media (max-width: 768px) {
+.project-underline{
+  width: 220px;
+}
   .project-card {
     flex: 1 1 45%; /* Adjust to fit 2 items per row */
     height: auto;

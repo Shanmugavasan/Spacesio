@@ -198,3 +198,23 @@ form button {
 form button:hover {
   background-color: #555;
 }
+
+
+@media (max-width: 768px) {
+  .contact-underline{
+    width: 190px;
+  }
+  .info-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+  
+}

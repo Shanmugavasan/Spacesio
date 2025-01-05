@@ -73,7 +73,7 @@
 /* Testimonial Text */
 .testimonial-text {
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.29rem;
   border-top: 50px;
   margin: 15px 0px;
   color: #666;
@@ -160,6 +160,39 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+  .testimonial-section{
+    height: 40vh;
+  }
+.testimonial-card {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: 100px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 55%;
+  opacity: 0;
+}
+.navigation-buttons {
+  top: 42%;
+}
+.testimonial-text{
+  max-width: 200px;
+  font-size: 0.8rem;
+}
+.testimonial-name {
+  font-size: 0.8rem;
+  margin-top: 0px;
+  color: #333;
+}
+
+.testimonial-role {
+  font-size: 0.5rem;
+  color: #888;
+  margin-top: -10px;
+}
   .testimonial-heading {
     font-size: 2.2rem;
   }

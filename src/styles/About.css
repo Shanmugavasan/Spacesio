@@ -82,11 +82,15 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+.about-section {
+  height: 150vh;
+}
 .image-container {
+  top: 5%;
   left: 8%;
 }
 .about-image {
-  height: 20%;
+  height: 25%;
 }
   .about-section{
     overflow: hidden;
@@ -111,16 +115,19 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    width: 70%;
-    left: 2%;
+    padding: 20px 20px;
+    border-left: 20px solid #fff;
+    border-right: 20px solid #fff;
+    width: 75%;
+    left: 0%;
     top: 30%;
   }
 
   .about-title {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   .about-description {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }

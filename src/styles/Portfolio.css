@@ -89,6 +89,12 @@
 }
 
 @media (max-width: 768px) {
+  .portfolio-heading{
+    font-size: 30px;
+  }
+  .portfolio-underline{
+    width: 111px;
+  }
   .portfolio-item {
     min-width: 200px; /* Adjust width for smaller screens */
   }

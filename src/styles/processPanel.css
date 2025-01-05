@@ -1,5 +1,5 @@
 .process-body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(135deg, #ffffff, #f8f9fa);
   color: #000000;
   height: 90vh;
@@ -19,21 +19,20 @@
   padding-top: 80px;
 }
 
-.ProcessPanel{
+.ProcessPanel {
   display: contents;
   align-self: center;
-
 }
-.ProcessPanel h3{
+.ProcessPanel h3 {
   font-size: 33px;
   width: 100vw;
   font-weight: 300;
   color: #333;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.ProcessPanel .process-underline{
+.ProcessPanel .process-underline {
   background-color: #888;
   margin-bottom: 30px;
   align-self: center;
@@ -201,7 +200,7 @@
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12), 0 15px 30px rgba(0, 0, 0, 0.08);
 }
 
-.contact-down-content{
+.contact-down-content {
   margin-top: 15px;
   font-weight: 300;
 }
@@ -263,8 +262,12 @@
 }
 
 @media (max-width: 768px) {
+  .process-body {
+    height: 100vh;
+  }
   .process-app {
     flex-direction: column;
+    height: 70vh;
     padding-top: 60px;
   }
 
@@ -281,32 +284,50 @@
   .process-content-container {
     position: relative;
     left: 0;
-    top: 0;
+    top: 0%;
     transform: none;
     width: 100%;
     height: auto;
     padding: 0 20px;
   }
-  .ProcessPanel{
+  .process-state-box {
+    margin-left: -4vw;
+  }
+  .process-state-box h2 {
+    font-size: 20px;
+  }
+  .process-state-box p {
+    width: 250px;
+    font-size: 12px;
+  }
+  .ProcessPanel {
     align-self: center;
     margin-top: -10vh;
-
   }
-    .ProcessPanel h3{
-      font-size: 33px;
-      width: 100vw;
-      font-weight: 300;
-      color: #333;
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
+  .ProcessPanel h3 {
+    font-size: 33px;
+    width: 100vw;
+    font-weight: 300;
+    color: #333;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
   }
-  .ProcessPanel .process-underline{
-    background-color: #888;
-    margin-bottom: 30px;
-    align-self: center;
-    width: 100px;
-    margin-top: -10px;
-    border-radius: 500px;
-    height: 3px;
+  .process-circle-image {
+    width: 50px;
+    height: 50px;
+  }
+  .process-circle-point span {
+    font-size: 12px;
+  }
+  .process-circle-point {
+    height: 30px;
+    width: 30px;
+  }
+  .process-circle-container {
+    top: -5%;
   }
 }

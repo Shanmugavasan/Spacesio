@@ -47,10 +47,9 @@
   flex-direction: column; /* Stack title and description vertically */
 }
 
-.services-header{
+.services-header {
   display: contents;
   align-self: center;
-
 }
 /* Services heading */
 .services-heading {
@@ -104,7 +103,7 @@
 }
 
 .service-description {
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: #777;
   font-family: "Montserrat", sans-serif;
 }
@@ -120,7 +119,11 @@
     flex: 1 1 100%; /* Full width for each item */
     max-width: 100%; /* Remove width restriction */
   }
+  .services-underline {
+    width: 230px;
+    margin-bottom: 10px;
+  }
   .services-heading {
-    font-size: 2rem;
+    font-size: 36px;
   }
 }
