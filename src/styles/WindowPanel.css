@@ -25,3 +25,12 @@
 .hidden {
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .window-panel {
+    height: 50vh; /* Height of the window */
+  }
+.bg-image {
+  object-fit: cover; /* Makes sure the image covers the area */
+}
+}

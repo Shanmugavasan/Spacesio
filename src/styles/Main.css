@@ -1,13 +1,11 @@
 /* Floating Social Icons */
 .floating-social {
   position: fixed;
-  right: 10px; /* Position from the right edge */
-  top: 92%; /* Align vertically in the center */
-  transform: translateY(-50%); /* Adjust position to be exactly in the center */
+  right: 5px; /* Position from the right edge */
+  bottom: 2%; /* Position from the bottom edge */
   display: flex;
   flex-direction: column;
   gap: 10px;
-  overflow: hidden;
   z-index: 1000; /* Ensure icons appear above other content */
 }
 
@@ -21,6 +19,7 @@
   justify-content: center;
   color: white;
   text-decoration: none;
+  overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

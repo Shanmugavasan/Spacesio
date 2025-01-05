@@ -82,8 +82,20 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+.image-container {
+  left: 8%;
+}
+.about-image {
+  height: 20%;
+}
   .about-section{
-    overflow-x: hidden;
+    overflow: hidden;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
 
   .about-grid {
@@ -92,16 +104,23 @@
   }
 
   .text-container {
-    position: static;
-    width: 100%;
-    margin-top: -50px;
+    overflow: hidden;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 70%;
+    left: 2%;
+    top: 30%;
   }
 
   .about-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .about-description {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }

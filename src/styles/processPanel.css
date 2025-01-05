@@ -293,12 +293,20 @@
 
   }
     .ProcessPanel h3{
-    display: inline-block;
-    text-align: center;
-    margin-top: 70px;
-    font-size: 32px;
-    color: #1a1a2e;
-    font-weight: 300;
-    border-bottom: 2px solid #dbd5cf;
+      font-size: 33px;
+      width: 100vw;
+      font-weight: 300;
+      color: #333;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+  }
+  .ProcessPanel .process-underline{
+    background-color: #888;
+    margin-bottom: 30px;
+    align-self: center;
+    width: 100px;
+    margin-top: -10px;
+    border-radius: 500px;
+    height: 3px;
   }
 }

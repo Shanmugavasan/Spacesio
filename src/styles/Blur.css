@@ -33,3 +33,11 @@
   z-index: 1; /* Ensure content is above the background */
   width: 100%; /* Ensure content stretches properly */
 }
+
+
+@media (max-width: 768px) {
+  .blur-container {
+    height: 70vh;
+  }
+  
+}
