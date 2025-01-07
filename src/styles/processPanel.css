@@ -297,7 +297,7 @@
   .process-state-box h2 {
     font-size: 20px;
   }
-  
+
   .process-state-box p {
     width: 250px;
     font-size: 12px;
@@ -306,6 +306,7 @@
     align-self: center;
     margin-top: -10vh;
   }
+  
   .ProcessPanel h3 {
     font-size: 33px;
     width: 100vw;
