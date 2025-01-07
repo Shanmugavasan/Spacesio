@@ -293,9 +293,11 @@
   .process-state-box {
     margin-left: -4vw;
   }
+
   .process-state-box h2 {
     font-size: 20px;
   }
+  
   .process-state-box p {
     width: 250px;
     font-size: 12px;
