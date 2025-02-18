@@ -65,7 +65,8 @@ export default function App() {
 
     setIsSubmitting(true);
     const form = new FormData();
-    form.append("access_key", "f19d6d76-ef90-42bd-aa6c-a270af398d0e"); // Replace with your actual access key
+    const access_key = process.env.MAIL_KEY;
+    form.append("access_key", access_key); // Replace with your actual access key
     form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("subject", formData.subject);
