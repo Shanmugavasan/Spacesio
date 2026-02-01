@@ -73,14 +73,14 @@ const Header = () => {
                 Projects
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#testimonials"
                 onClick={() => scrollToSection("testimonials")}
               >
                 Testimonials
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="#contact" onClick={() => scrollToSection("contact")}>
                 Contact Us

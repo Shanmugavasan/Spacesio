@@ -39,7 +39,7 @@ const App = () => {
       <ProjectSection />
 
       {/* Testimonial section */}
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
 
       {/* Contact section */}
       <Contact />
