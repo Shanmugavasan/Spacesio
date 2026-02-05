@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import Header from "./components/Header"; // Import the Header component
 import Blur from "./components/Blur"; // Import the blurred background component
 import Hero from "./components/Hero"; // Import the Hero component
@@ -15,6 +16,26 @@ import Process from "./components/processPanel.js";
 import Window from "./components/WindowPanel.js";
 
 const App = () => {
+useEffect(() => {
+  const path = window.location.pathname;
+
+  if (path.endsWith("/contact-us")) {
+    const contact = document.getElementById("contact");
+    if (contact) {
+      const y =
+        contact.getBoundingClientRect().top +
+        window.pageYOffset -
+        10;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }
+  }
+}, []);
+
+
   return (
     <div className="app-container">
       {/* Header section - fixed at the top */}

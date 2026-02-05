@@ -8,20 +8,27 @@ const Header = () => {
 const scrollToSection = (e, id) => {
   e.preventDefault();
 
+  // 🔥 reset URL to root (without reload)
+  const basePath = window.location.pathname.split("/contact-us")[0];
+  window.history.replaceState({}, "", basePath || "/");
+
   const element = document.getElementById(id);
   if (!element) return;
 
   const offset = id === "about" ? 100 : 10;
   const y =
-    element.getBoundingClientRect().top + window.pageYOffset - offset;
+    element.getBoundingClientRect().top +
+    window.pageYOffset -
+    offset;
 
   window.scrollTo({
     top: y,
     behavior: "smooth",
   });
 
-  setIsMenuOpen(false); // close mobile menu
+  setIsMenuOpen(false);
 };
+
   
   
 

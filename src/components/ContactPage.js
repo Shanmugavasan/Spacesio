@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/contact.css";
 
-export default function App() {
+export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -21,7 +21,7 @@ export default function App() {
 
   // Add the 'show' class when the page loads or scrolls into view
   const animateOnScroll = () => {
-    const container = document.querySelector(".container");
+    const container = document.querySelector(".contact-container");
     const infoBoxes = document.querySelectorAll(".info-box");
     const formSection = document.querySelector(".form-section");
 
@@ -167,7 +167,7 @@ export default function App() {
                   onChange={handleInputChange}
                   required
                 >
-                  <option value="" disabled selected>
+                  <option value="" disabled>
                     Select a Service
                   </option>
                   <option value="new-build">New Build</option>
