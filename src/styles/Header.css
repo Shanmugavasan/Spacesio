@@ -1,4 +1,8 @@
 /* Header Styles */
+section {
+  scroll-margin-top: 100px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -50,9 +54,9 @@
 .nav-links::before {
   content: "";
   position: absolute;
-  left: -20px; /* Adjust the distance from the links */
-  top: -65%;
-  height: 250%;
+  left: -25px; /* Adjust the distance from the links */
+  top: -50%;
+  height: 200%;
   width: 2px; /* Thickness of the line */
   background-color: rgba(55, 55, 55, 0.3); /* Color of the line */
 }

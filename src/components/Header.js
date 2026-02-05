@@ -5,29 +5,23 @@ import brandlogo from "../assets/brand-logo.png"; // Ensure this path is correct
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      let offset = 0;
-      if(element.id === "about") {
-        offset = 100;
-      }
-      else{
-        offset = 10;
-      }
-      const elementPosition =
-        element.getBoundingClientRect().top + window.scrollY; // Calculate the absolute position
-      const scrollToPosition = elementPosition - offset;
-  
-      // Add a slight delay to ensure React has rendered the target element
-      setTimeout(() => {
-        window.scrollTo({
-          top: scrollToPosition,
-          behavior: "smooth",
-        });
-      }, 0); // Delay can be increased if rendering is slow
-    }
-  };
+const scrollToSection = (e, id) => {
+  e.preventDefault();
+
+  const element = document.getElementById(id);
+  if (!element) return;
+
+  const offset = id === "about" ? 100 : 10;
+  const y =
+    element.getBoundingClientRect().top + window.pageYOffset - offset;
+
+  window.scrollTo({
+    top: y,
+    behavior: "smooth",
+  });
+
+  setIsMenuOpen(false); // close mobile menu
+};
   
   
 
@@ -38,9 +32,17 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <a href="#" className="logo" onClick={() => scrollToSection("home")}>
+        <a
+  href="#home"
+  className="logo"
+  onClick={(e) => scrollToSection(e, "home")}
+>
+  <img src={brandlogo} alt="Brand Logo" className="header-logo" />
+</a>
+
+        {/*<a href="#" className="logo" onClick={() => scrollToSection("home")}>
           <img src={brandlogo} alt="Brand Logo" className="header-logo" />
-        </a>
+        </a>*/}
 
         <div
           className={`hamburger ${isMenuOpen ? "active" : ""}`}
@@ -53,6 +55,12 @@ const Header = () => {
 
         <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
           <ul className="nav-links">
+            <a href="#home" onClick={(e) => scrollToSection(e, "home")}>Home</a>
+<a href="#about" onClick={(e) => scrollToSection(e, "about")}>About</a>
+<a href="#services" onClick={(e) => scrollToSection(e, "services")}>Products</a>
+<a href="#projects" onClick={(e) => scrollToSection(e, "projects")}>Projects</a>
+<a href="#contact" onClick={(e) => scrollToSection(e, "contact")}>Contact Us</a>
+{/*
             <li>
               <a href="#home" onClick={() => scrollToSection("home")}>
                 Home
@@ -73,19 +81,19 @@ const Header = () => {
                 Projects
               </a>
             </li>
-            {/* <li>
+            <li>
               <a
                 href="#testimonials"
                 onClick={() => scrollToSection("testimonials")}
               >
                 Testimonials
               </a>
-            </li> */}
+            </li>
             <li>
               <a href="#contact" onClick={() => scrollToSection("contact")}>
                 Contact Us
               </a>
-            </li>
+            </li>*/}
           </ul>
         </nav>
       </div>
