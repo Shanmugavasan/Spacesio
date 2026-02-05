@@ -116,7 +116,7 @@ export default function Contact() {
             <div className={`info-box`}>
               <i className="fas fa-map-marker-alt"></i>
               <h3>Address</h3>
-              <p>2/6, 4th Main Rd, Okkiayam, Thouraipakkam, Chennai</p>
+              <p>2/6, 4th Main Rd, Mahalakshmi Nagar, Adambakkam, Chennai</p>
             </div>
             <div className={`info-box`}>
               <i className="fas fa-envelope"></i>
