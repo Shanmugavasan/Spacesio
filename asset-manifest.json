@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Spacesio/static/css/main.786cc777.css",
-    "main.js": "/Spacesio/static/js/main.cdeb52e5.js",
+    "main.js": "/Spacesio/static/js/main.aa936ec8.js",
     "static/js/488.aa4f6714.chunk.js": "/Spacesio/static/js/488.aa4f6714.chunk.js",
     "static/media/row-1-column-2 (1).png": "/Spacesio/static/media/row-1-column-2 (1).f1881a996dc9dad51782.png",
     "static/media/row-1-column-1 (2).png": "/Spacesio/static/media/row-1-column-1 (2).5bbbc7785a594e99939a.png",
@@ -52,11 +52,11 @@
     "static/media/row-3-column-3 (1).png": "/Spacesio/static/media/row-3-column-3 (1).cdd4fdcb21ddd0b59715.png",
     "index.html": "/Spacesio/index.html",
     "main.786cc777.css.map": "/Spacesio/static/css/main.786cc777.css.map",
-    "main.cdeb52e5.js.map": "/Spacesio/static/js/main.cdeb52e5.js.map",
+    "main.aa936ec8.js.map": "/Spacesio/static/js/main.aa936ec8.js.map",
     "488.aa4f6714.chunk.js.map": "/Spacesio/static/js/488.aa4f6714.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.786cc777.css",
-    "static/js/main.cdeb52e5.js"
+    "static/js/main.aa936ec8.js"
   ]
 }
